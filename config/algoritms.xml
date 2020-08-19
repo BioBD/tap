@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<elements>
+    <initialize>
+        <object type="Agent" active="1">br.pucrio.biobd.tap.agents.Observer</object>
+        <object type="Agent" active="1">br.pucrio.biobd.tap.agents.IndexAgent</object>
+        <object type="Agent" active="0">br.pucrio.biobd.tap.agents.PartialIndexAgent</object>
+        <object type="Agent" active="1">br.pucrio.biobd.tap.agents.MaterializedViewAgent</object>
+        <object type="Agent" active="0">br.pucrio.biobd.tap.agents.Executor</object>
+    </initialize>
+    <algoritms>
+        <algoritm behavior="GenerateTuningActionsIndexAgent" active="1">br.pucrio.biobd.tap.algoritms.Index.IndexCreate</algoritm>
+        <algoritm behavior="GenerateTuningActionsMaterializedViewAgent" active="1">br.pucrio.biobd.tap.algoritms.MaterializedView.DefineView</algoritm>
+        <algoritm behavior="GenerateTuningActionsPartialIndexAgent" active="1">br.pucrio.biobd.tap.algoritms.PartialIndex.PartialIndexCreate</algoritm>
+        <algoritm behavior="ExecuteTuningActionsBehaviour" active="1">br.pucrio.biobd.tap.agents.sgbd.models.dao.IndexDAO</algoritm>
+        <algoritm behavior="ExecuteTuningActionsBehaviour" active="1">br.pucrio.biobd.tap.agents.sgbd.models.dao.MaterializedViewDAO</algoritm>
+        <algoritm behavior="ExecuteTuningActionsBehaviour" active="1">br.pucrio.biobd.tap.agents.sgbd.models.dao.PartialIndexDAO</algoritm>
+    </algoritms>
+</elements>

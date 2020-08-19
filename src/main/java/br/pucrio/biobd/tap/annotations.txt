@@ -1,0 +1,2 @@
+É necessário remover a duplicidade do comportamento ExtractDataBehaviour;
+Transformar o arquivo postgresql_data_extraction_planoperation.properties em XML
